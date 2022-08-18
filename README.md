@@ -1,2 +1,1 @@
 # Edu-Platform
-# edu-platform
