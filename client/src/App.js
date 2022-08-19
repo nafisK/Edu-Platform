@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
-import Calender from './Pages/Calender'
+import Cal from './Pages/Cal'
 import VideoCall from './Pages/VideoCall'
 import PageNotFound from './Pages/PageNotFound'
 import Login from './Pages/Login'
@@ -13,7 +13,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/login' element={<Login />} />
           <Route path='/profile' element={<Home />} />
-          <Route path='/calender' element={<Calender />} />
+          <Route path='/calendar' element={<Cal />} />
           <Route path='/videocall' element={<VideoCall />} />
           <Route path='*' element={<PageNotFound />} />
         </Routes>
