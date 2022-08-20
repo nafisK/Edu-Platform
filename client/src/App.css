@@ -293,6 +293,16 @@ body {
 
 }
 
+.groupAdd :hover {
+    overflow: hidden;
+    background-color: #b09e55;
+    border-radius: 50%;
+    transform: scale(2.5);
+    filter: invert(1);
+    cursor: pointer;
+    transition: 1s;
+}
+
 .teamcard {
     position: relative;
     width: 29%;
