@@ -1,11 +1,21 @@
 import { React, useEffect, useState } from 'react'
 import { ideas1, ideas2, ideas3 } from '../Assets/images/imageindex'
+import { useNavigate } from 'react-router-dom'
 
 export default function SideNav() {
+  const navigate = useNavigate()
+  const navigateHome = () => {
+    navigate('/home')
+  }
+  const navigateSchedule = () => {
+    navigate('/calendar')
+  }
+  const navigateVideoCall = () => {
+    navigate('/videocall')
+  }
   return (
     <div className='sidenav'>
       <div className='sidenavTitle'>Company</div>
-
       <nav>
         <svg
           className='sidenavIcon'
@@ -31,7 +41,9 @@ export default function SideNav() {
           />
         </svg>
 
-        <div className='sidenavText'>Profile</div>
+        <div className='sidenavText' onClick={navigateHome}>
+          Profile
+        </div>
       </nav>
 
       <nav>
@@ -79,27 +91,9 @@ export default function SideNav() {
             </clipPath>
           </defs>
         </svg>
-        <div className='sidenavText'>Group Meetings</div>
-      </nav>
-
-      <nav>
-        <svg
-          className='sidenavIcon'
-          width='32'
-          height='33'
-          viewBox='0 0 32 33'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path
-            d='M28 20.9C28 21.6072 27.719 22.2855 27.219 22.7856C26.7189 23.2857 26.0406 23.5667 25.3333 23.5667H9.33333L4 28.9V7.56666C4 6.85942 4.28095 6.18114 4.78105 5.68104C5.28115 5.18095 5.95942 4.89999 6.66667 4.89999H25.3333C26.0406 4.89999 26.7189 5.18095 27.219 5.68104C27.719 6.18114 28 6.85942 28 7.56666V20.9Z'
-            stroke='#364373'
-            stroke-width='3'
-            stroke-linecap='round'
-            stroke-linejoin='round'
-          />
-        </svg>
-        <div className='sidenavText'>Messages</div>
+        <div className='sidenavText' onClick={navigateVideoCall}>
+          Group Meetings
+        </div>
       </nav>
 
       <nav>
@@ -126,7 +120,29 @@ export default function SideNav() {
             fill='#364373'
           />
         </svg>
-        <div className='sidenavText'>Schedule</div>
+        <div className='sidenavText' onClick={navigateSchedule}>
+          Schedule
+        </div>
+      </nav>
+
+      <nav>
+        <svg
+          className='sidenavIcon'
+          width='32'
+          height='33'
+          viewBox='0 0 32 33'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <path
+            d='M28 20.9C28 21.6072 27.719 22.2855 27.219 22.7856C26.7189 23.2857 26.0406 23.5667 25.3333 23.5667H9.33333L4 28.9V7.56666C4 6.85942 4.28095 6.18114 4.78105 5.68104C5.28115 5.18095 5.95942 4.89999 6.66667 4.89999H25.3333C26.0406 4.89999 26.7189 5.18095 27.219 5.68104C27.719 6.18114 28 6.85942 28 7.56666V20.9Z'
+            stroke='#364373'
+            stroke-width='3'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          />
+        </svg>
+        <div className='sidenavText'>Messages</div>
       </nav>
 
       <div className='sidenavImage'>
