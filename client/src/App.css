@@ -22,6 +22,7 @@
     border-right: 2px solid #BDBDBD;
     transition: 0.5s;
     overflow: hidden;
+
 }
 
 .sidenavTitle {
@@ -85,8 +86,9 @@
 
 .sidenavImage {
 
+    padding: 5%;
     position: relative;
-    object-fit: fill;
+    object-fit: scale-down;
 
 }
 

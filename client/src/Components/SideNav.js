@@ -137,7 +137,9 @@ export default function SideNav() {
         <div className='sidenavText'>Schedule</div>
       </nav>
 
-      <img className='sidenavImage' src={ideas1}></img>
+      <div className='sidenavImage'>
+        <img src={ideas1}></img>
+      </div>
     </div>
   )
 }
