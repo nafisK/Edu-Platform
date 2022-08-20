@@ -119,9 +119,7 @@ body {
     height: 100vh;
     max-height: 100vh;
     border-right: 2px solid #BDBDBD;
-    transition: 0.5s;
     overflow: hidden;
-
 }
 
 .sidenavTitle {
