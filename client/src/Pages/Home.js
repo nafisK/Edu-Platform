@@ -4,11 +4,20 @@ import { airplanes } from '../Assets/images/imageindex'
 import GroupCard from '../Components/GroupCard'
 import TeamCard from '../Components/TeamCard'
 import Pagination from "../Components/Pagination/Pagination";
+import persons from "../Assets/persons.json";
 
 export default function Home() {
 
   // Pagination (captures user's page number)
   const [currentPage, setCurrentPage] = React.useState(1);
+
+  // The current view of the team tiles.
+  let tiles = 3;
+  const viewTeamTiles = React.useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * tiles;
+    const lastPageIndex = firstPageIndex + tiles;
+    return persons.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]); // Change resume tiles when the currentPage changes.
 
   return (
     <div className='app'>
@@ -63,6 +72,16 @@ export default function Home() {
         {/* Purple Panel*/}
         <h1>Your Teammates</h1>
         <div className='container'>
+        {viewTeamTiles.map((item) => {
+          return (
+            <TeamCard
+              pic={"https://picsum.photos/300?random=" + item.pic}
+              name={item.name}
+              email={item.email}
+              points={item.points * 100}
+            />
+          );
+        })}
           <TeamCard 
             pic="https://picsum.photos/300?random=5" 
             name="Allison Wonderland"
@@ -87,7 +106,7 @@ export default function Home() {
           className="paginationBar"
           currentPage={currentPage}
           totalCount="100"
-          pageSize={4}
+          pageSize={tiles}
           onPageChange={(page) => setCurrentPage(page)}
         />
       </div>
