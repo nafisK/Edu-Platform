@@ -1,136 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .bg {
-    /* bg */
+  /* bg */
 
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
-    background: #FDFDFD;
+  background: #fdfdfd;
 }
 
 .sidenav {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 20%;
-    height: 100%;
-    border-right: 2px solid #BDBDBD;
-    transition: 0.5s;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 20%;
+  height: 100%;
+  border-right: 2px solid #bdbdbd;
+  transition: 0.5s;
 }
 
 .sidenavTitle {
-    /* Company */
+  /* Company */
 
-    position: relative;
-    top: 10%;
-    height: 18.7%;
-    text-align: center;
+  position: relative;
+  top: 10%;
+  height: 18.7%;
+  text-align: center;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 22px;
-    /* identical to box height, or 61% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 22px;
+  /* identical to box height, or 61% */
 
-    color: #000000;
+  color: #000000;
 }
 
 .sidenav nav {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 13.2%;
-    background: white;
-    transition: 0.3s;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 13.2%;
+  background: white;
+  transition: 0.3s;
 }
 
 .sidenav nav:hover {
-
-    background: #4F61AA;
-    color: white;
-    cursor: pointer;
-
+  background: #4f61aa;
+  color: white;
+  cursor: pointer;
 }
 
 .sidenavText {
+  position: absolute;
+  padding-left: 33%;
 
-    position: absolute;
-    padding-left: 33%;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 22px;
-
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 22px;
 }
 
 .sidenavIcon {
-
-    position: absolute;
-    left: 12%;
-
+  position: absolute;
+  left: 12%;
 }
 
 .forceFit {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: fill;
-  }
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
 
 .login {
-    /* images */
+  /* images */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    position: absolute;
-    width: 1271px;
-    height: 772px;
-    left: 5px;
-    top: 64px;
+  position: absolute;
+  width: 1271px;
+  height: 772px;
+  left: 5px;
+  top: 64px;
 
-    background: #4F61AA;
-    border-radius: 0px 0px 10px 10px;
+  background: #4f61aa;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .login-background {
-    /* login background */
+  /* login background */
 
-    position: absolute;
-    width: 462px;
-    height: 739px;
-    left: 20px;
-    top: 78px;
+  position: absolute;
+  width: 462px;
+  height: 739px;
+  left: 20px;
+  top: 78px;
 
-    background: #D7D7D7;
-    border-radius: 20px;
+  background: #d7d7d7;
+  border-radius: 20px;
 }
-  
 
 .login-title {
-    /* Sign in to Company Name */
+  /* Sign in to Company Name */
 
-    position: absolute;
-    width: 269px;
-    height: 22px;
-    left: 77px;
-    top: 372px;
+  position: absolute;
+  width: 269px;
+  height: 22px;
+  left: 77px;
+  top: 372px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 22px;
-    /* identical to box height, or 92% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  /* identical to box height, or 92% */
 
-    letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-    color: #142363;
+  color: #142363;
 }

@@ -2,16 +2,8 @@ import { React, useEffect, useState } from 'react'
 import { ideas } from '../Assets/images/imageindex'
 
 export default function SideNav() {
-  const [sideNavVisibility, setsideNavVisibility] = useState('visible')
-
-  useEffect(() => {
-    if (window.location.href === 'http://localhost:3000/login') {
-      setsideNavVisibility('invisible')
-    }
-  }, [])
-
   return (
-    <div className={`sidenav ${sideNavVisibility}`}>
+    <div className='sidenav'>
       <div className='sidenavTitle'>Company</div>
 
       <nav>
@@ -137,7 +129,7 @@ export default function SideNav() {
         <div className='sidenavText'>Schedule</div>
       </nav>
 
-      <img src={ideas}></img>
+      <img src={ideas} className=''></img>
     </div>
   )
 }

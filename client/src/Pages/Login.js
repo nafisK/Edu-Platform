@@ -1,36 +1,62 @@
 import React from 'react'
+import helloLogin from '../Assets/images/helloLogin.svg'
+import loginImage from '../Assets/images/loginImage.svg'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast'
 
 export default function Login() {
-  return (
-    <div class='flex w-full h-screen bg-[#4F61AA] ml-[20%]'>
-      <div class='w-4/12'>
-        <div className='bg-[#D7D7D7] rounded-2xl p-8 flex justify-center items-center h-[92%] my-12 mx-12'>
-          {/* <div>
-            <div>LOGO</div>
-            <div>Sign in to ___</div>
-            <div>Enter your details below</div>
-            <div>
-              <div>Email</div>
-              <input />
-            </div>
-            <div>
-              <div>Password</div>
-              <input />
-            </div>
-          </div>
-           */}
+  const [email, setEmail] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const navigate = useNavigate()
+  const notifyLogin = () =>
+    toast('Unable to login, please enter correct credentials.', {
+      type: 'error',
+    })
+  const notifyLoginError = () =>
+    toast('Unable to login, unknown error.', { type: 'error' })
 
-          <form
-            className='max-w-[80%] w-full mx-auto p-5 rounded-md '
-            onSubmit={console.log('submitted')}
-          >
-            <h2 className='text-4xl font-bold text-center py-6 text-[#142363]'>
-              IMAGE HERE.
+  const onSubmit = e => {
+    e.preventDefault()
+    axios
+      .get('http://localhost:3001/login', {
+        params: {
+          email: email,
+          password: password,
+        },
+      })
+      .then(function (res) {
+        console.log(res)
+        if (res.data.isLoggedin === true) {
+          navigate('/home')
+        } else if (res.data.isLoggedin === false) {
+          console.log('failure')
+          notifyLogin()
+        } else {
+          notifyLoginError()
+        }
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+  }
+
+  return (
+    <div class='flex w-screen h-screen bg-[#4F61AA]'>
+      <div class='w-4/12'>
+        <div className='h-[85%] bg-[#D7D7D7] rounded-3xl	 p-8 flex justify-center items-center my-20 ml-12'>
+          <form className='max-w-[80%] w-full mx-auto p-5 rounded-md '>
+            <h2 className='py-6 text-[#142363] flex justify-center items-center'>
+              <img
+                src={helloLogin}
+                alt='helloLogin'
+                className='justify-center items-center w-48 h-48'
+              />
             </h2>
             <div>
               <div className='flex flex-col py-2 '>
                 <div className='text-2xl font-bold text-[#142363]'>
-                  Sign in to __ Here
+                  Sign in to COMPANY NAME Here
                 </div>
                 <div className='text-[#142363] my-3'>Enter your details</div>
                 <label className='text-[#667080]'>Email</label>
@@ -38,7 +64,9 @@ export default function Login() {
                   className='border border--[#142363] p-2 rounded-xl'
                   type='text'
                   id='email'
-                  onChange={e => console.log(e)}
+                  value={email}
+                  required
+                  onChange={e => setEmail(e.target.value)}
                 />
               </div>
               <div className='flex flex-col py-2'>
@@ -47,7 +75,9 @@ export default function Login() {
                   className='border p-2 border--[#142363] rounded-lg'
                   id='password'
                   type='password'
-                  onChange={e => console.log(e)}
+                  value={password}
+                  required
+                  onChange={e => setPassword(e.target.value)}
                 />
               </div>
 
@@ -66,32 +96,34 @@ export default function Login() {
                   </label>
                 </div>
                 <div className='flex items-center mr-4'>
-                  <a></a>
-                  <a className='text-[#142363]' href='#'>
+                  <a className='text-[#142363]' href='google.com'>
                     Forgot Password?
                   </a>
                 </div>
               </div>
 
-              <button className='border w-full my-5 py-2 rounded-md text-white bg-[#142363]'>
+              <button
+                className='border w-full my-5 py-2 rounded-md text-white bg-[#142363]'
+                onClick={onSubmit}
+              >
                 Sign In
               </button>
               <div className='text-center'>
-                <p className='font-bold text-gray-700'>Sign Up</p>
-              </div>
-              <div className='flex flex-col items-center	'>
-                <button className='border p-2 border-yellow-400 m-1 w-4/12 rounded'>
-                  Company
-                </button>
-                <button className='border p-2 border-yellow-400 m-1 w-4/12 rounded'>
-                  Freelancer
-                </button>
+                <p className='font-bold text-[#667080]'>Sign Up</p>
               </div>
             </div>
+            <Toaster />
           </form>
         </div>
       </div>
-      <div class='w-8/12'>02</div>
+      <div class='w-8/12 flex flex-col'>
+        <div className='text-white text-6xl pb-24 w-full h-[33%] flex justify-center items-end'>
+          COMPANY NAME
+        </div>
+        <div className='flex justify-center items-center'>
+          <img src={loginImage} alt='helloLogin' className='w-[60%] h-full ' />
+        </div>
+      </div>
     </div>
   )
 }

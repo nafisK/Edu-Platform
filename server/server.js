@@ -46,16 +46,17 @@ app.post('/signup', async function (req, res) {
 
 // user login
 app.get('/login', async function (req, res) {
+  console.log(req.query)
   try {
-    const user = await Users.findOne({ email: req.body.email })
+    const user = await Users.findOne({ email: req.query.email })
     if (user) {
-      if (await bcrypt.compare(req.body.password, user.password)) {
-        res.send({ isLoggedin: true, message: 'Login successful' })
+      if (await bcrypt.compare(req.query.password, user.password)) {
+        res.send({ isLoggedin: true, message: 'success' })
       } else {
-        res.send({ isLoggedin: false, message: 'Incorrect password' })
+        res.send({ isLoggedin: false, message: 'failure' })
       }
     } else {
-      res.send({ isLoggedin: false, message: 'Email does not exist' })
+      res.send({ isLoggedin: false, message: 'dne' })
     }
   } catch (err) {
     res.send({ message: err })
@@ -94,7 +95,7 @@ app.get('/users/:keyword', async function (req, res) {
   }
 })
 
-// post new group 
+// post new group
 // user signup
 app.post('/groups', async function (req, res) {
   // empty object to store user data
@@ -102,7 +103,6 @@ app.post('/groups', async function (req, res) {
     return res.status(400).send('Request body is missing')
   }
 
-  
   // upload user to database
   await newGroup
     .save()
