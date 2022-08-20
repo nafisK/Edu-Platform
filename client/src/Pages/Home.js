@@ -39,10 +39,10 @@ export default function Home() {
               <div class="scroller">
                 <span>
                   Software Engineer<br/>
-                  Programmer<br/>
                   Designer<br/>
                   User<br/>
-                  Developer
+                  Developer<br/>
+                  Programmer
                 </span>
               </div>
             </h3>
