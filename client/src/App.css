@@ -1,129 +1,316 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
-.bg {
-  /* bg */
+.highlight {
+    color: #364373;
+}
 
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+.white {
+    color: white;
+}
 
-  background: #fdfdfd;
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 22px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #364373;
+
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    position: relative;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+    display: flex;
+    align-items: center;
+
+    color: #142363;
+
+    padding-bottom: .75%;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    position: relative;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #142363;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #142363;
+}
+
+.round {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.dot {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: #54CE36;
+    border-radius: 50%;
+    border: 2.5px solid white;
+}
+
+.unavailable {
+    background-color: #F04C4C;
 }
 
 .sidenav {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 20%;
-  height: 100%;
-  border-right: 2px solid #bdbdbd;
-  transition: 0.5s;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+    border-right: 2px solid #BDBDBD;
+    transition: 0.5s;
+    overflow: hidden;
+
 }
 
 .sidenavTitle {
-  /* Company */
+    /* Company */
 
-  position: relative;
-  top: 10%;
-  height: 18.7%;
-  text-align: center;
+    position: relative;
+    top: 10%;
+    height: 18.7%;
+    text-align: center;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 22px;
-  /* identical to box height, or 61% */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 22px;
+    /* identical to box height, or 61% */
 
-  color: #000000;
+    color: #000000;
 }
 
 .sidenav nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 13.2%;
-  background: white;
-  transition: 0.3s;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13.2%;
+    background: white;
+    color: #364373;
+    transition: 0.3s;
+
 }
 
 .sidenav nav:hover {
-  background: #4f61aa;
-  color: white;
-  cursor: pointer;
+
+    background: #4F61AA;
+    color: white;
+    cursor: pointer;
+
 }
 
 .sidenavText {
-  position: absolute;
-  padding-left: 33%;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 22px;
+    position: absolute;
+    padding-left: 33%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 22px;
+
 }
 
 .sidenavIcon {
-  position: absolute;
-  left: 12%;
+
+    position: absolute;
+    left: 12%;
+
 }
 
-.forceFit {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: fill;
+.sidenavImage {
+
+    padding: 5%;
+    position: relative;
+    object-fit: scale-down;
+
 }
 
-.login {
-  /* images */
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 1271px;
-  height: 772px;
-  left: 5px;
-  top: 64px;
-
-  background: #4f61aa;
-  border-radius: 0px 0px 10px 10px;
+.home {
+    position: absolute;
+    margin-left: 20vw;
+    width: 80vw;
+    height: 100vh;
+    padding-top: 1.5%;
+    padding-left: 3%;
 }
 
-.login-background {
-  /* login background */
+.homeRect {
+    /* Rectangle 56 */
+    position: relative;
+    width: 91%;
+    height: 23%;
 
-  position: absolute;
-  width: 462px;
-  height: 739px;
-  left: 20px;
-  top: 78px;
-
-  background: #d7d7d7;
-  border-radius: 20px;
+    background: #4F61AA;
+    border-radius: 2.5vmin;
 }
 
-.login-title {
-  /* Sign in to Company Name */
+.homeRectPic {
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*anchor center-center*/
+    stroke-linejoin: round;
+    object-fit: scale-down;
+    max-width: 12%;
+    border: 5px dashed white;
+}
 
-  position: absolute;
-  width: 269px;
-  height: 22px;
-  left: 77px;
-  top: 372px;
+.homeRecth1 {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 22px;
-  /* identical to box height, or 92% */
+.homeRectBody {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
 
-  letter-spacing: -0.02em;
+.homeRectImage {
+    position: absolute;
+    transform: translate(0%, -50%); /*anchor left-center*/
+    top: 50%;
+    right: 10%;
+    max-width: 60%;
+    max-height: 80%;
+}
 
-  color: #142363;
+.container {
+    position: relative;
+    width: 91%;
+    height: 23%;
+
+    /* group cards */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.groupcard {
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+    border: 2px solid #BFBFBF;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.groupText {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.groupPic {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 40%;
+    transform: translate(-50%, 0%); /*anchor top-center*/
+}
+
+.teamcard {
+    position: relative;
+    width: 29%;
+    height: 100%;
+
+    background: #F5F5F5;
+    border-radius: 20px;
+}
+
+.teamText {
+    position: absolute;
+    left: 7.5%;
+    bottom: 10%;
+}
+
+.teamPic {
+    position: absolute;
+    left: 7.5%;
+    top: 10%;
+    width: 28%;
+    transform: translate(0%, 0%); /*anchor top-left*/
+}
+
+.teamPoints {
+    position: absolute;
+    right: 7.5%;
+    top: 15%;
 }
 
 .VideoCall {
