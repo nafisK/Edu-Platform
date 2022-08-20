@@ -332,6 +332,28 @@ body {
     top: 15%;
 }
 
+.paginationBar {
+    position: absolute;
+    right: 6%;
+    bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .VideoCall {
   color: #000;
 }

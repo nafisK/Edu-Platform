@@ -3,8 +3,13 @@ import SideNav from '../Components/SideNav'
 import { airplanes } from '../Assets/images/imageindex'
 import GroupCard from '../Components/GroupCard'
 import TeamCard from '../Components/TeamCard'
+import Pagination from "../Components/Pagination/Pagination";
 
 export default function Home() {
+
+  // Pagination (captures user's page number)
+  const [currentPage, setCurrentPage] = React.useState(1);
+
   return (
     <div className='app'>
       <SideNav />
@@ -77,6 +82,14 @@ export default function Home() {
             points="3000"
           />
         </div>
+
+        <Pagination
+          className="paginationBar"
+          currentPage={currentPage}
+          totalCount="100"
+          pageSize={4}
+          onPageChange={(page) => setCurrentPage(page)}
+        />
       </div>
     </div>
   )
