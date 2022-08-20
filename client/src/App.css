@@ -253,6 +253,11 @@ body {
     justify-content: space-between;
 }
 
+.container :hover {
+    transition: 0.05s;
+    background-color: #BCC8F7;
+}
+
 .groupcard {
     position: relative;
     width: 20%;
