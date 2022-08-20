@@ -282,6 +282,17 @@ body {
     transform: translate(-50%, 0%); /*anchor top-center*/
 }
 
+.groupAdd {
+    /* Vector */
+
+    position: absolute;
+    left: 80%;
+    right: 10%;
+    top: 75.16%;
+    bottom: 14.25%;
+
+}
+
 .teamcard {
     position: relative;
     width: 29%;
