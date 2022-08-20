@@ -14,12 +14,14 @@
 
 .sidenav {
     position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 20%;
-    height: 100%;
+    left: 0vw;
+    top: 0vh;
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
     border-right: 2px solid #BDBDBD;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .sidenavTitle {
@@ -42,11 +44,13 @@
 
 .sidenav nav {
 
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 13.2%;
     background: white;
+    color: #364373;
     transition: 0.3s;
 
 }
@@ -79,11 +83,12 @@
 
 }
 
-.forceFit {
-    max-width: 100%;
-    max-height: 100%;
+.sidenavImage {
+
+    position: relative;
     object-fit: fill;
-  }
+
+}
 
 .login {
     /* images */
