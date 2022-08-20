@@ -38,9 +38,9 @@ export default function Home() {
             <h3 className="white">
               <div class="scroller">
                 <span>
+                  Software Engineer<br/>
                   Programmer<br/>
                   Designer<br/>
-                  Software Engineer<br/>
                   User<br/>
                   Developer
                 </span>
