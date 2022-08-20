@@ -18,7 +18,7 @@ export default function SideNav() {
   }
   return (
     <div className='sidenav'>
-      <div className='sidenavTitle'>Headstarter</div>
+      <div className='sidenavTitle'>HelloTeams</div>
       <nav>
         <svg
           className='sidenavIcon'
