@@ -12,7 +12,7 @@ const TeamCard = (props) => {
   return (
     <div className="teamcard">
       <div className='teamPic round'>
-        <img src={pic}/>
+        <img src={pic} alt='profile pic'/>
       </div>
       <div className="teamText">
         <h3>{name}</h3>

@@ -1,5 +1,5 @@
-import { React, useEffect, useState } from 'react'
-import { ideas1, ideas2, ideas3 } from '../Assets/images/imageindex'
+import { React } from 'react'
+import { ideas1 } from '../Assets/images/imageindex'
 import { useNavigate } from 'react-router-dom'
 
 export default function SideNav() {
@@ -151,7 +151,7 @@ export default function SideNav() {
       </nav>
 
       <div className='sidenavImage'>
-        <img src={ideas1}></img>
+        <img src={ideas1} alt='banner'></img>
       </div>
     </div>
   )

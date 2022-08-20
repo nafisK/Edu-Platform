@@ -12,7 +12,7 @@ export default function Home() {
   const [currentPage, setCurrentPage] = React.useState(1);
 
   // The current view of the team tiles.
-  let tiles = 3;
+  const tiles = 3;
   const viewTeamTiles = React.useMemo(() => {
     const firstPageIndex = (currentPage - 1) * tiles;
     const lastPageIndex = firstPageIndex + tiles;
@@ -31,7 +31,7 @@ export default function Home() {
         {/* Purple Panel*/}
         <div className='homeRect'>
           <div className='homeRectPic round'>
-            <img src="https://picsum.photos/300"/>
+            <img src="https://picsum.photos/300" alt='user pic'/>
           </div>
 
           <div className='homeRecth1'><h3 className="white">UserName</h3></div>
@@ -40,7 +40,7 @@ export default function Home() {
             <body className="white">Points: 1200</body>
           </div>
 
-          <img className='homeRectImage' src={airplanes} />
+          <img className='homeRectImage' src={airplanes} alt='background with airplanes'/>
         </div>
 
         {/* Group Cards*/}

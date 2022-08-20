@@ -15,7 +15,7 @@ const GroupCard = (props) => {
         : <span class="dot"></span>
       }
       <div className='groupPic round'>
-        <img src={pic}/>
+        <img src={pic} alt='group pic'/>
       </div>
       <div className="groupText">
         <h3>{team}</h3>
