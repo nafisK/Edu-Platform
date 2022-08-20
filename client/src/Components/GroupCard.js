@@ -10,7 +10,10 @@ const GroupCard = (props) => {
 
   return (
     <div className="groupcard">
-      <span class="dot"></span>
+      {members >= 200
+        ? <span class="dot unavailable"></span>
+        : <span class="dot"></span>
+      }
       <div className='groupPic round'>
         <img src={pic}/>
       </div>

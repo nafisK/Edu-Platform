@@ -40,7 +40,6 @@ export default function Home() {
             <body className="white">Points: 1200</body>
           </div>
 
-          <span class="dot"></span>
           <img className='homeRectImage' src={airplanes} />
         </div>
 
@@ -60,7 +59,7 @@ export default function Home() {
           <GroupCard 
             pic="https://picsum.photos/300?random=1003" 
             team="Bacon Army"
-            members="200+"
+            members="200"
           />
           <GroupCard 
             pic="https://picsum.photos/300?random=1004" 
