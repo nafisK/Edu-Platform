@@ -75,7 +75,7 @@ export default function Home() {
             members="200"
           />
           <GroupCard 
-            pic="https://picsum.photos/300?random=1004" 
+            pic="https://upload.wikimedia.org/wikipedia/en/2/23/Lofi_girl_logo.jpg" 
             team="Lofi study and relax"
             members="30"
           />
