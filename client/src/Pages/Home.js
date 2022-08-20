@@ -34,9 +34,22 @@ export default function Home() {
             <img src="https://picsum.photos/300" alt='user pic'/>
           </div>
 
-          <div className='homeRecth1'><h3 className="white">UserName</h3></div>
+          <div className='homeRecth1'>
+            <h3 className="white">
+              <div class="scroller">
+                <span>
+                  Programmer<br/>
+                  Designer<br/>
+                  Software Engineer<br/>
+                  User<br/>
+                  Developer
+                </span>
+              </div>
+            </h3>
+          </div>
+          
           <div className='homeRectBody'>
-            <body className="white">User ID: joihegh-joiengioj- hoihni-joijio </body>
+            <body className="white">User ID: cefd5b22-81ab-441e-af78-7de75e5428aa</body>
             <body className="white">Points: 1200</body>
           </div>
 

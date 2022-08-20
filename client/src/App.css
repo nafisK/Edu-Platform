@@ -344,7 +344,55 @@ body {
 }
 
 
+/* Scroller styling */
+.scroller {
+    text-align: left;
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+}
 
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 12s infinite;
+    font-weight: bold;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    18% {
+        top: 0;
+    }
+    20% {
+        top: -1.2em;
+    }
+    38% {
+        top: -1.2em;
+    }
+    40% {
+        top: -2.4em;
+    }
+    58% {
+        top: -2.4em;
+    }
+    60% {
+        top: -3.6em;
+    }
+    78% {
+        top: -3.6em;
+    }
+    80% {
+        top: -4.8em;
+    }
+    98% {
+        top: -4.8em;
+    }
+}
 
 
 
