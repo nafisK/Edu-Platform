@@ -13,9 +13,12 @@ export default function SideNav() {
   const navigateVideoCall = () => {
     navigate('/videocall')
   }
+  const navigateMessages = () => {
+    navigate('/messages')
+  }
   return (
     <div className='sidenav'>
-      <div className='sidenavTitle'>Company</div>
+      <div className='sidenavTitle'>Headstarter</div>
       <nav>
         <svg
           className='sidenavIcon'
@@ -142,7 +145,9 @@ export default function SideNav() {
             stroke-linejoin='round'
           />
         </svg>
-        <div className='sidenavText'>Messages</div>
+        <div className='sidenavText' onClick={navigateMessages}>
+          Messages
+        </div>
       </nav>
 
       <div className='sidenavImage'>

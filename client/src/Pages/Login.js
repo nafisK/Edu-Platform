@@ -56,7 +56,7 @@ export default function Login() {
             <div>
               <div className='flex flex-col py-2 '>
                 <div className='text-2xl font-bold text-[#142363]'>
-                  Sign in to COMPANY NAME Here
+                  Sign in to Headstarter Here
                 </div>
                 <div className='text-[#142363] my-3'>Enter your details</div>
                 <label className='text-[#667080]'>Email</label>
@@ -118,7 +118,7 @@ export default function Login() {
       </div>
       <div class='w-8/12 flex flex-col'>
         <div className='text-white text-6xl pb-24 w-full h-[33%] flex justify-center items-end'>
-          COMPANY NAME
+          Headstarter
         </div>
         <div className='flex justify-center items-center'>
           <img src={loginImage} alt='helloLogin' className='w-[60%] h-full ' />

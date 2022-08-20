@@ -5,6 +5,7 @@ import Cal from './Pages/Cal'
 import VideoCall from './Pages/VideoCall'
 import PageNotFound from './Pages/PageNotFound'
 import Login from './Pages/Login'
+import Messages from './Pages/Messages'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/profile' element={<Home />} />
           <Route path='/calendar' element={<Cal />} />
           <Route path='/videocall' element={<VideoCall />} />
+          <Route path='/messages' element={<Messages />} />
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Router>
