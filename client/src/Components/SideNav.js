@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-import { ideas } from '../Assets/images/imageindex'
+import { ideas1, ideas2, ideas3 } from '../Assets/images/imageindex'
 
 export default function SideNav() {
   return (
@@ -129,7 +129,9 @@ export default function SideNav() {
         <div className='sidenavText'>Schedule</div>
       </nav>
 
-      <img src={ideas} className=''></img>
+      <div className='sidenavImage'>
+        <img src={ideas1}></img>
+      </div>
     </div>
   )
 }

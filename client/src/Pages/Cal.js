@@ -7,7 +7,7 @@ import getDay from 'date-fns/getDay'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import DatePicker from 'react-datepicker'
 import SideNav from '../Components/SideNav'
-
+import "react-datepicker/dist/react-datepicker.css";
 const locales = {
   'en-US': require('date-fns/locale/en-US'),
 }
