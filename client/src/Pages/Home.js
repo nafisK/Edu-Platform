@@ -48,22 +48,22 @@ export default function Home() {
         <h1>Groups</h1>
         <div className='container'>
           <GroupCard 
-            pic="https://picsum.photos/300?random=1" 
+            pic="https://picsum.photos/300?random=1000" 
             team="Unstoppable Force"
             members="10"
           />
           <GroupCard 
-            pic="https://picsum.photos/300?random=2" 
+            pic="https://picsum.photos/300?random=1002" 
             team="The Avengers"
             members="23"
           />
           <GroupCard 
-            pic="https://picsum.photos/300?random=3" 
+            pic="https://picsum.photos/300?random=1003" 
             team="Bacon Army"
             members="200+"
           />
           <GroupCard 
-            pic="https://picsum.photos/300?random=4" 
+            pic="https://picsum.photos/300?random=1004" 
             team="Lofi study and relax"
             members="30"
           />
@@ -72,40 +72,22 @@ export default function Home() {
         {/* Purple Panel*/}
         <h1>Your Teammates</h1>
         <div className='container'>
-        {viewTeamTiles.map((item) => {
-          return (
-            <TeamCard
-              pic={"https://picsum.photos/300?random=" + item.pic}
-              name={item.name}
-              email={item.email}
-              points={item.points * 100}
-            />
-          );
-        })}
-          <TeamCard 
-            pic="https://picsum.photos/300?random=5" 
-            name="Allison Wonderland"
-            email="allisonwonderland@gmail.com"
-            points="1200"
-          />
-          <TeamCard 
-            pic="https://picsum.photos/300?random=6" 
-            name="Adrien Agreste"
-            email="catnoir@gmail.com"
-            points="2300"
-          />
-          <TeamCard 
-            pic="https://picsum.photos/300?random=7" 
-            name="Marinette Dupain-Cheng"
-            email="ladybug@gmail.com"
-            points="3000"
-          />
+          {viewTeamTiles.map((item) => {
+            return (
+              <TeamCard
+                pic={"https://picsum.photos/300?random=" + item.pic}
+                name={item.name}
+                email={item.email}
+                points={item.points * 100}
+              />
+            );
+          })}
         </div>
 
         <Pagination
           className="paginationBar"
           currentPage={currentPage}
-          totalCount="100"
+          totalCount={persons.length}
           pageSize={tiles}
           onPageChange={(page) => setCurrentPage(page)}
         />
