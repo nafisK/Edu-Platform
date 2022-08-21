@@ -37,37 +37,9 @@ function Cal() {
     setAllEvents([...allEvents, newEvent])
   }
   return (
-    <div className='calendar flex justify-center items-center h-screen w-screen'>
+    <div className='calendar flex ml-[20%] items-center h-screen w-screen '>
       <SideNav />
-
-      {/* <div className=''>
-        <h2>Add an Event:</h2>
-        <input
-          type='text'
-          placeholder='Add Title'
-          style={{ width: '20%', marginRight: '10px' }}
-          value={newEvent.title}
-          onChange={e => setNewEvent({ ...newEvent, title: e.target.value })}
-        />
-        <DatePicker
-          placeholderText='Start Date'
-          style={{ marginRight: '10px' }}
-          selected={newEvent.start}
-          onChange={start => setNewEvent({ ...newEvent, start })}
-        />
-
-        <DatePicker
-          placeholderText='End Date'
-          selected={newEvent.end}
-          onChange={end => setNewEvent({ ...newEvent, end })}
-        />
-
-        <button style={{ marginTop: '10px' }} onClick={handleAddEvent}>
-          Submit New Event
-        </button>
-      </div> */}
-
-      <div class='p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8'>
+      <div class='p-4 ml-20 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8'>
         <form class='space-y-6' action='#'>
           <h5 class='text-xl font-medium text-gray-900 '>Add A New Event!</h5>
           <div>
@@ -138,7 +110,8 @@ function Cal() {
         events={allEvents}
         startAccessor='start'
         endAccessor='end'
-        style={{ height: 500, margin: '50px' }}
+        className='m-[50px]'
+        style={{ height: 800, width: 900, margin: '50px' }}
       />
     </div>
   )
