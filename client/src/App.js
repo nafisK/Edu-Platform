@@ -9,7 +9,7 @@ import Messages from './Pages/Messages'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App '>
       <Router>
         <Routes>
           <Route exact path='/' element={<Login />} />

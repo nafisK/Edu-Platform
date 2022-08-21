@@ -17,7 +17,7 @@ export default function SideNav() {
     navigate('/messages')
   }
   return (
-    <div className='sidenav'>
+    <div className='sidenav '>
       <div className='sidenavTitle'>HelloTeams</div>
       <nav>
         <svg

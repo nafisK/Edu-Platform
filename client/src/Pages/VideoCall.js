@@ -5,10 +5,12 @@ import Video from '../Components/Video'
 
 export default function VideoCall() {
   return (
-    <div className='ml-[20%] h-screen'>
+    <div>
       <SideNav />
-      <Tabs />
-      <Video />
+      <div className='box'>
+        <Tabs />
+        <Video />
+      </div>
     </div>
   )
 }

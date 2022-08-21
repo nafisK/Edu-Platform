@@ -3,409 +3,391 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 .highlight {
-    color: #364373;
+  color: #364373;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 h1 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 22px;
-    line-height: 22px;
-    /* identical to box height, or 100% */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+  /* identical to box height, or 100% */
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
 
-    color: #364373;
+  color: #364373;
 
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    position: relative;
+  position: relative;
 }
 
 h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-    /* identical to box height, or 27px */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #142363;
+  color: #142363;
 
-    padding-bottom: .75%;
+  padding-bottom: 0.75%;
 
-    /* Inside auto layout */
+  /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    position: relative;
+  position: relative;
 }
 
 h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height, or 122% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
 
-    color: #142363;
+  color: #142363;
 }
 
 body {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height, or 122% */
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.02em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
 
-    color: #142363;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #142363;
 }
 
 .round {
-    overflow: hidden;
-    border-radius: 50%;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .dot {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    height: 25px;
-    width: 25px;
-    background-color: #54CE36;
-    border-radius: 50%;
-    border: 2.5px solid white;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #54ce36;
+  border-radius: 50%;
+  border: 2.5px solid white;
 }
 
 .unavailable {
-    background-color: #F04C4C;
+  background-color: #f04c4c;
 }
 
 .sidenav {
-    position: absolute;
-    left: 0vw;
-    top: 0vh;
-    width: 20vw;
-    height: 100vh;
-    max-height: 100vh;
-    border-right: 2px solid #BDBDBD;
-    overflow: hidden;
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+  width: 20vw;
+  height: 100vh;
+  max-height: 100vh;
+  border-right: 2px solid #bdbdbd;
+  overflow: hidden;
 }
 
 .sidenavTitle {
-    /* Company */
+  /* Company */
 
-    position: relative;
-    top: 10%;
-    height: 18.7%;
-    text-align: center;
+  position: relative;
+  top: 10%;
+  height: 18.7%;
+  text-align: center;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 22px;
-    /* identical to box height, or 61% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 22px;
+  /* identical to box height, or 61% */
 
-    color: #000000;
+  color: #000000;
 }
 
 .sidenav nav {
-
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 13.2%;
-    background: white;
-    color: #364373;
-    transition: 0.3s;
-
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 13.2%;
+  background: white;
+  color: #364373;
+  transition: 0.3s;
 }
 
 .sidenav nav:hover {
-
-    background: #4F61AA;
-    color: white;
-    cursor: pointer;
-
+  background: #4f61aa;
+  color: white;
+  cursor: pointer;
 }
 
 .sidenavText {
+  position: absolute;
+  padding-left: 33%;
 
-    position: absolute;
-    padding-left: 33%;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 22px;
-
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 22px;
 }
 
 .sidenavIcon {
-
-    position: absolute;
-    left: 12%;
-
+  position: absolute;
+  left: 12%;
 }
 
 .sidenavImage {
-
-    padding: 5%;
-    position: relative;
-    object-fit: scale-down;
-
+  padding: 5%;
+  position: relative;
+  object-fit: scale-down;
 }
 
 .home {
-    position: absolute;
-    margin-left: 20vw;
-    width: 80vw;
-    height: 100vh;
-    padding-top: 1.5%;
-    padding-left: 3%;
+  position: absolute;
+  margin-left: 20vw;
+  width: 80vw;
+  height: 100vh;
+  padding-top: 1.5%;
+  padding-left: 3%;
+}
+
+.box {
+  position: absolute;
+  margin-left: 20vw;
+  height: 100vh;
+  width: 80vw;
 }
 
 .homeRect {
-    /* Rectangle 56 */
-    position: relative;
-    width: 91%;
-    height: 23%;
+  /* Rectangle 56 */
+  position: relative;
+  width: 91%;
+  height: 23%;
 
-    background: #4F61AA;
-    border-radius: 2.5vmin;
+  background: #4f61aa;
+  border-radius: 2.5vmin;
 }
 
 .homeRectPic {
-    position: absolute;
-    margin-left: 10%;
-    top: 50%;
-    transform: translate(-50%, -50%); /*anchor center-center*/
-    stroke-linejoin: round;
-    object-fit: scale-down;
-    max-width: 12%;
-    border: 5px dashed white;
+  position: absolute;
+  margin-left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%); /*anchor center-center*/
+  stroke-linejoin: round;
+  object-fit: scale-down;
+  max-width: 12%;
+  border: 5px dashed white;
 }
 
 .homeRecth1 {
-    position: absolute;
-    left: 30%;
-    top: 30%;
+  position: absolute;
+  left: 30%;
+  top: 30%;
 }
 
 .homeRectBody {
-    position: absolute;
-    left: 30%;
-    top: 50%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
 }
 
 .homeRectImage {
-    position: absolute;
-    transform: translate(0%, -50%); /*anchor left-center*/
-    top: 50%;
-    right: 10%;
-    max-width: 60%;
-    max-height: 80%;
+  position: absolute;
+  transform: translate(0%, -50%); /*anchor left-center*/
+  top: 50%;
+  right: 10%;
+  max-width: 60%;
+  max-height: 80%;
 }
 
 .container {
-    position: relative;
-    width: 91%;
-    height: 23%;
+  position: relative;
+  width: 91%;
+  height: 23%;
 
-    /* group cards */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px;
-    justify-content: space-between;
+  /* group cards */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  justify-content: space-between;
 }
 
 .container :hover {
-    transition: 0.05s;
-    background-color: #BCC8F7;
+  transition: 0.05s;
+  background-color: #bcc8f7;
 }
 
 .groupcard {
-    position: relative;
-    width: 20%;
-    height: 100%;
+  position: relative;
+  width: 20%;
+  height: 100%;
 
-    border: 2px solid #BFBFBF;
-    border-radius: 20px;
+  border: 2px solid #bfbfbf;
+  border-radius: 20px;
 
-    /* Inside auto layout */
+  /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .groupText {
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
 }
 
 .groupPic {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    width: 40%;
-    transform: translate(-50%, 0%); /*anchor top-center*/
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 40%;
+  transform: translate(-50%, 0%); /*anchor top-center*/
 }
 
 .groupAdd {
-    /* Vector */
+  /* Vector */
 
-    position: absolute;
-    left: 80%;
-    right: 10%;
-    top: 75.16%;
-    bottom: 14.25%;
-
+  position: absolute;
+  left: 80%;
+  right: 10%;
+  top: 75.16%;
+  bottom: 14.25%;
 }
 
 .groupAdd :hover {
-    overflow: hidden;
-    background-color: #b09e55;
-    border-radius: 50%;
-    transform: scale(2.5);
-    filter: invert(1);
-    cursor: pointer;
-    transition: 1s;
+  overflow: hidden;
+  background-color: #b09e55;
+  border-radius: 50%;
+  transform: scale(2.5);
+  filter: invert(1);
+  cursor: pointer;
+  transition: 1s;
 }
 
 .teamcard {
-    position: relative;
-    width: 29%;
-    height: 100%;
+  position: relative;
+  width: 29%;
+  height: 100%;
 
-    background: #F5F5F5;
-    border-radius: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
 }
 
 .teamText {
-    position: absolute;
-    left: 7.5%;
-    bottom: 10%;
+  position: absolute;
+  left: 7.5%;
+  bottom: 10%;
 }
 
 .teamPic {
-    position: absolute;
-    left: 7.5%;
-    top: 10%;
-    width: 28%;
-    transform: translate(0%, 0%); /*anchor top-left*/
+  position: absolute;
+  left: 7.5%;
+  top: 10%;
+  width: 28%;
+  transform: translate(0%, 0%); /*anchor top-left*/
 }
 
 .teamPoints {
-    position: absolute;
-    right: 7.5%;
-    top: 15%;
+  position: absolute;
+  right: 7.5%;
+  top: 15%;
 }
 
 .paginationBar {
-    position: absolute;
-    right: 6%;
-    bottom: 1%;
+  position: absolute;
+  right: 6%;
+  bottom: 1%;
 }
-
 
 /* Scroller styling */
 .scroller {
-    text-align: left;
-    height: 1.2em;
-    line-height: 1.2em;
-    position: relative;
-    overflow: hidden;
-    width: 10em;
+  text-align: left;
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
 }
 
 .scroller > span {
-    position: absolute;
-    top: 0;
-    animation: slide 12s infinite;
-    font-weight: bold;
+  position: absolute;
+  top: 0;
+  animation: slide 12s infinite;
+  font-weight: bold;
 }
 
 @keyframes slide {
-    0% {
-        top: 0;
-    }
-    18% {
-        top: 0;
-    }
-    20% {
-        top: -1.2em;
-    }
-    38% {
-        top: -1.2em;
-    }
-    40% {
-        top: -2.4em;
-    }
-    58% {
-        top: -2.4em;
-    }
-    60% {
-        top: -3.6em;
-    }
-    78% {
-        top: -3.6em;
-    }
-    80% {
-        top: -4.8em;
-    }
-    98% {
-        top: -4.8em;
-    }
+  0% {
+    top: 0;
+  }
+  18% {
+    top: 0;
+  }
+  20% {
+    top: -1.2em;
+  }
+  38% {
+    top: -1.2em;
+  }
+  40% {
+    top: -2.4em;
+  }
+  58% {
+    top: -2.4em;
+  }
+  60% {
+    top: -3.6em;
+  }
+  78% {
+    top: -3.6em;
+  }
+  80% {
+    top: -4.8em;
+  }
+  98% {
+    top: -4.8em;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .VideoCall {
   color: #000;
